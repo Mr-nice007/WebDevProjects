@@ -1,0 +1,41 @@
+ol {
+  margin-left: -40px;
+  margin-top: -20px;
+  list-style-position: inside;
+}
+
+/* Write your CSS below, don't change the rules above. */
+/* this is element selector
+it will select all the elements in the page */
+
+p {
+  color: red;
+}
+/* Class selector starts with a dot and name of the class
+this can be use in multi page web app
+we can have multiple class within the same index.html */
+
+.note {
+  font-size: 20px;
+}
+
+/* this is id selector, kust be unique 
+and you can use it only one within an index.html file */
+
+#id-selector-demo{
+  color: green;
+}
+
+/* this is attribute selector 
+can be use for attributes */
+
+li[value="4"] {
+  color: blue;
+}
+
+/* this is universal selector
+it will select all the elements in the page */
+
+* {
+  text-align: center;
+}

@@ -1,0 +1,26 @@
+<body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index Page</title>
+    <link rel="stylesheet" href="/styles.css">
+</head> 
+<body>
+    <header>
+     <%
+        let today = new Date();  //"December 25, 2025 10:00:00"
+        let dayNumber = today.getDay(); // Returns the number corresponding to today's day of the week
+        // 0 for Sunday, 1 for Monday, ..., 6 for Saturday
+        if (dayNumber === 0) { %>
+            <h1>Hey! it's weekend, it's time to have fun!</h1>
+        <% } else if (dayNumber === 6) { %>
+            <h1>Hey! it's weekend, it's time to have fun!</h1>
+        <% } else { %>
+            <h1>Hey! it's a weekday, it's time to work hard!</h1>
+        <% } 
+     %>
+    </header>
+
+</body>
