@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/main.css">
+    <title>Blog Posts</title>
+</head>
+<body>
+    <header>
+        <h1>My Blog</h1>
+        <a href="/create">Create New Post</a>
+    </header>
+    <main>
+        <h2>All Posts</h2>
+        <ul>
+            <% posts.forEach(post => { %>
+                <li>
+                    <a href="/post/<%= post.id %>"><%= post.title %></a>
+                </li>
+            <% }) %>
+        </ul>
+    </main>
+    <%- include ("partials/footer.ejs") %>
+</body>
+</html>
+
